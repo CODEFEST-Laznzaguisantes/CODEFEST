@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "usuario": "Aceite esencial de Clavo",
+      "pasword": "12ML.",
+      "correo": ""
+    },
+
+    {
+        "id": 2,
+        "usuario": "Aceite esencial de Clavo",
+        "pasword": "12ML.",
+        "correo": ""
+    },
+    
+    {
+        "id": 3,
+        "usuario": "Aceite esencial de Clavo",
+        "pasword": "12ML.",
+        "correo": ""
+    }
+  ]
