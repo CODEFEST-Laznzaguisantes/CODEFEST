@@ -13,17 +13,15 @@
    
 <div class="form-container">
 
-   <form action="" method="post" enctype="multipart/form-data">
+   <form action="/validar" method="post" enctype="multipart/form-data">
       <h3>enter</h3>
-
-      <input type="email" name="email" placeholder="incoming e-mail" class="box" required>
-      <input type="password" name="password" placeholder="enter password" class="box" required>
+      <input type="text" id="usuario" name="usuario" placeholder="enter text" class="box" required>
+      <input type="email" id="email" name="email" placeholder="incoming e-mail" class="box" required>
+      <input type="password" id="password" name="password" placeholder="enter password" class="box" required>
       <input type="submit" name="submit" value="enter" class="btn">
       <p> don't have an account ? <a href="loginadc.ejs">register</a></p>
-      <p> if you are a coordinator or administrator <a href="loginadc.ejs">enter</a></p>
    </form>
 
 </div>
-
 </body>
 </html>

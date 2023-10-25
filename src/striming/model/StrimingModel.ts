@@ -12,19 +12,4 @@ export default class StrimingsModel {
     })
   }
 
-  getUsuarioById = async (id: number): Promise<UsuarioInterface> => {
-    return await new Promise((resolve, reject) => {
-      try {
-        const usuario = usuarios.find((usuario) => usuario.id === id)
-        if (usuario !== undefined) {
-          const p = { ...usuario, ...{ img: `${usuario.id}.jpg` } }
-          resolve(p as UsuarioInterface)
-        } else {
-          reject(new Error('Product not found'))
-        }
-      } catch (error) {
-        reject(error)
-      }
-    })
-  }
 }

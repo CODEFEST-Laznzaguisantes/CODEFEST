@@ -1,7 +1,7 @@
 import { Router } from 'express'
 import StrimingView from '../view/StrimingView'
 
-export default class StrimingRouter {
+export default class SRouter {
   router: Router
 
   constructor (private readonly strimingView: StrimingView) {
@@ -10,6 +10,7 @@ export default class StrimingRouter {
   }
 
   routes = (): void => {
+    this.router.post('/validar', this.strimingView.validar)
     this.router.get('/', this.strimingView.index)
   }
 }

@@ -20,6 +20,7 @@ class Server {
       path: path.join(__dirname, '../../config/.env.development')
     })
     this.strimings.set('view engine', 'ejs')
+    this.strimings.use(express.json())
     this.strimings.set('views', path.join(__dirname, './template'))
     this.strimings.use(express.static(path.join(__dirname, './public')))
     this.strimings.use(express.urlencoded({ extended: false }))
@@ -41,3 +42,4 @@ class Server {
 
 const server = new Server(new StrimingsRouter(new StrimingsView(new StrimingsModel())))
 server.start()
+
